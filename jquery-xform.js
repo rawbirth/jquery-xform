@@ -98,6 +98,12 @@ $.fn.extend({
                 if ((typeof id === 'string') && (xform.renderSuccess('#' + id + ' ul[xform=list]') === true)) {
                     $('#' + id).removeClass(xform.options.classHide);
                 }
+                if ($xform.attr('xform-remove-after-success') === 'true') {
+                    $xform.remove();
+                }
+                if ($xform.attr('xform-reset-after-success') === 'true') {
+                    $xform.reset();
+                }
             };
 
             this.hideSuccess = function () {
