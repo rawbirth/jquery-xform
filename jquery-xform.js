@@ -99,10 +99,10 @@ $.fn.extend({
                     $('#' + id).removeClass(xform.options.classHide);
                 }
                 if ($xform.attr('xform-remove-after-success') === 'true') {
-                    $xform.remove();
+                    xform.remove();
                 }
                 if ($xform.attr('xform-reset-after-success') === 'true') {
-                    $xform.reset();
+                    xform.reset();
                 }
             };
 
