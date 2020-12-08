@@ -1,0 +1,11 @@
+{
+  "name": "jquery-xform",
+  "version": "1.0.0",
+  "description": "Contact form using jQuery ajax to post the data.",
+  "main": "jquery-xform.js",
+  "author": "Weberest",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

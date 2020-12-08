@@ -1,6 +1,6 @@
 /*!
   * jQuery XForm plugin v1.0
-  * Copyright 2008-2019 Weberest
+  * Copyright 2008-2021 Weberest
   * Licensed under MIT
   */
 
@@ -49,17 +49,11 @@ $.fn.extend({
                     return false;
                 }
 
-                //let $li = $ul.find('li:first');
                 $ul.html('');
-                //$ul.append($li);
 
                 if (xform.report.hasOwnProperty('fields')) {
                     for (let field in xform.report.fields) {
                         if (xform.report.fields.hasOwnProperty(field) && xform.report.fields[field].status === 'invalid') {
-                            /*let $newLi = $li.clone();
-                            $newLi.removeClass('template');
-                            $newLi.html($li.html().replace('%message%', xform.report.fields[field].message));
-                            $ul.append($newLi);*/
                             $ul.append('<li class="' + xform.options.classErrorMessage + '">' + xform.report.fields[field].message + '</li>');
                         }
                     }
